@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alineando columnas verticalmente</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+
+  <style>
+    .row > div {
+      border: solid 1px #000000;
+      background: #d6d1d1;
+    }
+
+    .row {
+      height: 150px;
+      background: #dbdbdb;
+      margin: 10px 0;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col"><h4>Column #1</h4></div>
+
+        <div class="col"><h4>Column #2</h4></div>
+
+        <div class="col"><h4>Column #3</h4></div>
+      </div>
+
+      <div class="w-100"></div>
+
+      <div class="row align-items-center">
+        <div class="col"><h4>Column #1</h4></div>
+
+        <div class="col"><h4>Column #2</h4></div>
+
+        <div class="col"><h4>Column #3</h4></div>
+      </div>
+
+      <div class="row align-items-end">
+        <div class="col"><h4>Column #1</h4></div>
+
+        <div class="col"><h4>Column #2</h4></div>
+
+        <div class="col"><h4>Column #3</h4></div>
+      </div>
+
+      <!-- cuando se quiere hacer columna por columna -->
+
+      <div class="row ">
+        <div class="col align-self-start"><h4>Column #1</h4></div>
+
+        <div class="col align-self-center"><h4>Column #2</h4></div>
+
+        <div class="col align-self-end"><h4>Column #3</h4></div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+  </body>
+</html>
